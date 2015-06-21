@@ -1,13 +1,9 @@
-package debs15.dkg_storm.builder;
+package dkg_storm.builder;
 
 import java.util.HashMap;
 
 /**
  * @author Nicolo Rivetti
- * 
- *         This class encapsulates DKG's global mapping (Heavy Hitters to
- *         operator instances and buckets of Sparse Items to instances)
- *
  */
 public class DKGHash {
 
@@ -16,6 +12,10 @@ public class DKGHash {
 	public final HashMap<Integer, Integer> hashFunctionMapping;
 
 	/**
+	 * 
+	 * This class encapsulates DKG's global mapping (Heavy Hitters to operator
+	 * instances and buckets of Sparse Items to instances)
+	 * 
 	 * @param mostFrequentMapping
 	 *            Heavy Hitters to operator instances mapping
 	 * @param hashfunction

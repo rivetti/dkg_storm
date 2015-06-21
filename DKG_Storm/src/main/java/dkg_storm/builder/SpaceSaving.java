@@ -1,4 +1,4 @@
-package debs15.dkg_storm.builder;
+package dkg_storm.builder;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -7,11 +7,6 @@ import java.util.TreeMap;
 
 /**
  * @author Nicolo Rivetti
- * 
- *         This class implements the Space Saving algorithm presented by
- *         Metwally, Agrawal and El Abbadi in "Efficient computation of frequent
- *         and top-k elements in data streams" (ICDT'05).
- *
  */
 public class SpaceSaving {
 
@@ -27,6 +22,11 @@ public class SpaceSaving {
 	public double m = 0;
 
 	/**
+	 * 
+	 * This class implements the Space Saving algorithm presented by Metwally,
+	 * Agrawal and El Abbadi in "Efficient computation of frequent and top-k
+	 * elements in data streams" (ICDT'05).
+	 * 
 	 * @param epsilon
 	 *            double value in (0,theta], precision parameter setting the
 	 *            memory footprint, ie, the algorithm stores 1/epsilon entries.

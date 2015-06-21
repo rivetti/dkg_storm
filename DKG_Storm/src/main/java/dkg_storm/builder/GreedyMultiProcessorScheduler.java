@@ -1,4 +1,4 @@
-package debs15.dkg_storm.builder;
+package dkg_storm.builder;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -9,9 +9,6 @@ import java.util.TreeSet;
 
 /**
  * @author Nicolo Rivetti
- * 
- *         This class implements a Greedy Multi-Processor Scheduling algorithm.
- *
  */
 public class GreedyMultiProcessorScheduler {
 

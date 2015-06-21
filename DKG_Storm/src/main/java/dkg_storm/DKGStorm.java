@@ -1,4 +1,4 @@
-package debs15.dkg_storm;
+package dkg_storm;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -7,15 +7,13 @@ import java.util.List;
 import backtype.storm.generated.GlobalStreamId;
 import backtype.storm.grouping.CustomStreamGrouping;
 import backtype.storm.task.WorkerTopologyContext;
-import debs15.dkg_storm.builder.DKGBuilder;
-import debs15.dkg_storm.builder.DKGHash;
+import dkg_storm.builder.DKGBuilder;
+import dkg_storm.builder.DKGHash;
 
 /**
  * @author Nicolo Rivetti
  * 
- *         This class implements the CustomStreamGrouping interface offered by
- *         the Apache Storm API This implementation leverages the
- *         Distribution-Aaare Key Grouping (DKG) algorithm
+ * 
  */
 public class DKGStorm implements CustomStreamGrouping, Serializable {
 
@@ -37,6 +35,11 @@ public class DKGStorm implements CustomStreamGrouping, Serializable {
 	private IKey key;
 
 	/**
+	 * 
+	 * Implements the CustomStreamGrouping interface offered by the Apache Storm
+	 * API This implementation leverages the Distribution-Aware Key Grouping
+	 * (DKG) algorithm
+	 * 
 	 * @param theta
 	 *            double value in (0,1], heavy hitter threshold, i.e., all keys
 	 *            with an empirical probability larger than or equal to theta
@@ -67,6 +70,11 @@ public class DKGStorm implements CustomStreamGrouping, Serializable {
 	}
 
 	/**
+	 * 
+	 * Implements the CustomStreamGrouping interface offered by the Apache Storm
+	 * API This implementation leverages the Distribution-Aware Key Grouping
+	 * (DKG) algorithm
+	 * 
 	 * @param theta
 	 *            double value in (0,1], heavy hitter threshold, i.e., all keys
 	 *            with an empirical probability larger than or equal to theta

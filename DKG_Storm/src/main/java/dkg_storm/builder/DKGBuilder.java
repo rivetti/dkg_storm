@@ -1,4 +1,4 @@
-package debs15.dkg_storm.builder;
+package dkg_storm.builder;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,8 +8,6 @@ import org.apache.commons.math3.random.RandomDataGenerator;
 
 /**
  * @author Nicolo Rivetti
- * 
- *         This class implements the learning and building phase of DKG
  *
  */
 public class DKGBuilder {
@@ -23,6 +21,9 @@ public class DKGBuilder {
 	private final SpaceSaving ss;
 
 	/**
+	 * 
+	 * This class implements the learning and building phase of DKG
+	 * 
 	 * @param theta
 	 *            double value in (0,1], heavy hitter threshold, i.e., all keys
 	 *            with an empirical probability larger than or equal to theta

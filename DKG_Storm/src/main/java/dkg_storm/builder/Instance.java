@@ -1,12 +1,10 @@
-package debs15.dkg_storm.builder;
+package dkg_storm.builder;
 
 import java.util.ArrayList;
 
 /**
  * @author Nicolo Rivetti
  * 
- *         This class represents the available operator instances to which the
- *         scheduler has to map partitions of the key space.
  */
 
 public class Instance {
@@ -17,6 +15,9 @@ public class Instance {
 	private final ArrayList<Integer> partitions;
 
 	/**
+	 * This class represents the available operator instances to which the
+	 * scheduler has to map partitions of the key space.
+	 * 
 	 * Creates a new instance with the given identifier and no initial load.
 	 * 
 	 * @param id
@@ -30,6 +31,10 @@ public class Instance {
 	}
 
 	/**
+	 * 
+	 * This class represents the available operator instances to which the
+	 * scheduler has to map partitions of the key space.
+	 * 
 	 * Creates a new instance with the given identifier and initial load.
 	 * 
 	 * @param id
