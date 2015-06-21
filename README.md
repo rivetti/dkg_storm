@@ -1,8 +1,6 @@
 # dgk_storm
 Distribution-aware Key Grouping (DKG) implementation for Apache Storm
 
-NOTICE: The source code will be uploaded shortly
-
 This repository contains the implementation of the Distribution-aware Key Grouping (DKG) algorithm targeting Apache Storm (through a class extending a the CustomStreamGrouping inteface).
 
 We present the details of this algorithm in the paper Nicolo' Rivetti,  Leonardo Querzoni, Emmanuelle Anceaume, Yann  Busnel and Bruno Sericola, Efficient Key Grouping for Near-Optimal Load Balancing in Stream Processing Systems, Proceedings of the 9th ACM International Conference on Distributed Event-Based Systems, DEBS, 2015.
