@@ -1,4 +1,4 @@
-package debs15.DKG_Storm;
+package debs15.dkg_storm;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package debs15.DKG_Storm.builder;
+package debs15.dkg_storm.builder;
 
 import java.util.HashMap;
 import java.util.HashSet;

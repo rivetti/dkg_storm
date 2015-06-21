@@ -1,4 +1,4 @@
-package debs15.DKG_Storm;
+package debs15.dkg_storm;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -7,8 +7,8 @@ import java.util.List;
 import backtype.storm.generated.GlobalStreamId;
 import backtype.storm.grouping.CustomStreamGrouping;
 import backtype.storm.task.WorkerTopologyContext;
-import debs15.DKG_Storm.builder.DKGBuilder;
-import debs15.DKG_Storm.builder.DKGHash;
+import debs15.dkg_storm.builder.DKGBuilder;
+import debs15.dkg_storm.builder.DKGHash;
 
 /**
  * @author Nicolo Rivetti
@@ -111,7 +111,7 @@ public class DKGStorm implements CustomStreamGrouping, Serializable {
 			m++;
 			this.builder.newSample(key.get(values));
 			if (m == learningLenght) {
-				this.hash = this.builder.run();
+				this.hash = this.builder.build();
 			}
 		} else {
 			ret.add(this.targetTasks.get(this.hash.map(key.get(values))));
